@@ -29,7 +29,7 @@ const WelcomeSection = () => {
                             {
                                 config.navLinks.map(link => {
                                     return (
-                                        <Link href={link.url} onClick={handleModal}>{link.label}</Link>
+                                        <Link key={link.url} href={link.url} onClick={handleModal}>{link.label}</Link>
                                     )
                                 })
                             }

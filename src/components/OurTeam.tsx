@@ -42,14 +42,14 @@ const OurTeam = () => {
                 }
             </div>
            <div className={"w-full h-full relative"}>
-               <img className={"absolute -top-44"} src={"/shield.png"} alt={"shield"}/>
+               <img className={"absolute -top-44 -z-20"} src={"/shield.png"} alt={"shield"}/>
            </div>
             <div className={"container my-20 mb-52 w-full h-screen m-auto flex items-center justify-end"}>
                 <div className={"flex flex-col gap-[32px]"}>
                     <div className={"flex flex-col gap-[16px]"}>
                         <h1 className={"text-white mobile:text-[40px] desktop:text-[50px] font-black"}>Круглосуточный <br/> доступ к
                             полной <br/> службе поддержки</h1>
-                        <span className={"text-slate-400 text-base font-normal"}>На протяжении всего цикла мы будем поддерживать Вас и отвечать <br/> на возникшие вопросы</span>
+                        <span className={"desktop:text-slate-400 tablet:text-slate-200 text-base font-normal"}>На протяжении всего цикла мы будем поддерживать Вас и отвечать <br/> на возникшие вопросы</span>
                     </div>
                     <button
                         className={"p-[20px] border border-white rounded-[10px] w-max font-semibold hover:text-black hover:bg-white transition-all"}>
@@ -57,7 +57,7 @@ const OurTeam = () => {
                     </button>
                 </div>
             </div>
-            <div id={"advantages-section"} className={"w-full relative bottom-[250px] flex mobile:px-2 tablet:px-10 desktop:px-10 flex-col desktop:items-center gap-[30px]"}>
+            <div id={"advantages-section"} className={"w-full relative bottom-[250px] flex mobile:px-2 tablet:px-10 desktop:px-10 flex-col tablet:items-center desktop:items-center gap-[30px]"}>
                 <div className={"w-full flex flex-col items-center gap-[16px] mb-[25px]"}>
                     <h1 className={"text-white text-[50px] font-black"}>Рост прибыли в короткие сроки</h1>
                     <span className={"text-slate-400 text-base font-normal"}>Для многих важен результат и мы его гарантируем</span>
