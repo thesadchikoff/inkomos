@@ -14,12 +14,12 @@ const OurTeam = () => {
                 </h1>
                 <span className={"text-center text-slate-400 text-base font-normal"}>Вдохновляющие учителя, готовые помочь Вам пройти путь успешного обучения!</span>
             </div>
-            <div className={"container m-auto w-full flex items-center px-10 gap-[100px] mt-[79px]"}>
+            <div className={"container m-auto w-full flex mobile:flex-col desktop:flex-row items-center mobile:px-2 tablet:px-10 desktop:px-10 gap-[100px] mt-[79px]"}>
                 {
                     config.team.map(member => {
                         return (
                             <div key={member.urlImage}
-                                 className={"bg-zinc-900 rounded-[25px] w-1/2 p-[30px] flex flex-col gap-[25px]"}>
+                                 className={"w-full bg-zinc-900 rounded-[25px] w-1/2 mobile:z-40 p-[30px] flex flex-col gap-[25px]"}>
                                 <div className={"flex gap-[31px]"}>
                                     <img
                                         className={`rounded-[20px] shadow-for-${member.urlImage.replace(/^\/(.*)(\.(jpg|png))$/, '$1')} bg-no-repeat bg-cover bg-center w-[144px] h-[203px]`}
@@ -47,7 +47,7 @@ const OurTeam = () => {
             <div className={"container my-20 mb-52 w-full h-screen m-auto flex items-center justify-end"}>
                 <div className={"flex flex-col gap-[32px]"}>
                     <div className={"flex flex-col gap-[16px]"}>
-                        <h1 className={"text-white text-[50px] font-black"}>Круглосуточный <br/> доступ к
+                        <h1 className={"text-white mobile:text-[40px] desktop:text-[50px] font-black"}>Круглосуточный <br/> доступ к
                             полной <br/> службе поддержки</h1>
                         <span className={"text-slate-400 text-base font-normal"}>На протяжении всего цикла мы будем поддерживать Вас и отвечать <br/> на возникшие вопросы</span>
                     </div>
@@ -57,7 +57,7 @@ const OurTeam = () => {
                     </button>
                 </div>
             </div>
-            <div id={"advantages-section"} className={"w-full relative bottom-[250px] flex px-10 flex-col items-center gap-[30px]"}>
+            <div id={"advantages-section"} className={"w-full relative bottom-[250px] flex mobile:px-2 tablet:px-10 desktop:px-10 flex-col desktop:items-center gap-[30px]"}>
                 <div className={"w-full flex flex-col items-center gap-[16px] mb-[25px]"}>
                     <h1 className={"text-white text-[50px] font-black"}>Рост прибыли в короткие сроки</h1>
                     <span className={"text-slate-400 text-base font-normal"}>Для многих важен результат и мы его гарантируем</span>
@@ -94,11 +94,11 @@ const OurTeam = () => {
                             className={"text-white text-base font-semibold flex items-center gap-[6px] w-[200px] justify-end"}>Подробнее <FaArrowRightLong/></span>}/>
                     </Table.Group>
                 </Table>
-                <img className={"absolute right-0 -z-10 top-[500px]"} src={"/briefcase-img.png"} alt={"spiral-bg"}/>
+                <img className={"absolute right-0 -z-10 mobile:top-[300px] desktop:top-[500px]"} src={"/briefcase-img.png"} alt={"spiral-bg"}/>
             </div>
-            <div className={"w-full px-10 pt-20"}>
+            <div className={"w-full mobile:px-2 tablet:px-10 desktop:px-10 pt-20"}>
                 <div className={"container m-auto flex flex-col gap-[32px]"}>
-                    <h1 className={"text-white text-[50px] font-black w-[580px]"}>Поднять продажи проще, чем Вам
+                    <h1 className={"text-white mobile:text-[40px] desktop:text-[50px] font-black mobile:w-full desktop:w-[580px]"}>Поднять продажи проще, чем Вам
                         кажется</h1>
                     <span className={"text-slate-400 text-base font-normal"}>
                         Выгоднее и проще: как поднять продажи в E-Commerce с помощью проверенных стратегий
@@ -109,9 +109,9 @@ const OurTeam = () => {
                     </div>
                 </div>
             </div>
-            <div id={"news-section"} className={"px-10 py-32 flex flex-col justify-center items-center gap-[52px]"}>
+            <div id={"news-section"} className={"mobile:px-2 tablet:px-10 desktop:px-10 py-32 flex flex-col justify-center items-center gap-[52px]"}>
                 <div className={"w-full flex flex-col gap-[16px] items-center"}>
-                    <h1 className={"text-white text-[50px] font-black"}>
+                    <h1 className={"text-white text-center mobile:text-[40px] desktop:text-[50px] font-black"}>
                         Подписаться на новости
                     </h1>
                     <span className={"text-center text-slate-400 text-base font-normal"}>

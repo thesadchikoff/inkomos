@@ -5,15 +5,15 @@ import config from "@/config/siteConfig";
 
 const CaseSection = () => {
     return (
-        <main id={"case-section"} className={"container m-auto px-10 z-50 pb-20"}>
-            <div className={"bg-[#1A1B23] p-[60px] rounded-[25px] flex gap-[55px] justify-start z-50"}>
+        <main id={"case-section"} className={"container m-auto flex mobile:flex-col desktop:flex-row mobile:px-2 tablet:px-10 desktop:px-10 z-50 pb-20"}>
+            <div className={"bg-[#1A1B23] mobile:p-[20px] desktop:p-[60px] rounded-[25px] flex mobile:flex-col desktop:flex-row gap-[55px] justify-start z-50"}>
                     <div className={"z-50"}>
                         <Image src={'case.svg'} alt={'Кейс "Лидер"'} width={80} height={80}/>
                     </div>
-                    <div className={"flex w-full gap-[54px] z-50"}>
+                    <div className={"flex mobile:flex-col desktop:flex-row w-full gap-[54px] z-50"}>
                         <div className={"flex flex-col gap-[26px] z-50"}>
                             <h1 className={"text-white text-[32px] font-extrabold z-50"}>Кейс {config.product.productName}</h1>
-                            <span className={"w-[498px] text-slate-400 font-normal z-50"}>
+                            <span className={"mobile:w-full desktop:w-[498px] text-slate-400 font-normal z-50"}>
                             {config.product.productDescription}
                         </span>
                         </div>

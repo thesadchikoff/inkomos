@@ -11,21 +11,21 @@ const Footer = () => {
         <footer className={"relative border-t  border-t-[#1A1B23]"}>
             <img className={"absolute left-0 bottom-0 -z-10"} src="/bg-gradient-footer.png" alt="gradient-for-footer"/>
             <div
-                className={"container m-auto w-full h-[510px] px-10 py-[100px] relative flex justify-between"}>
+                className={"container m-auto w-full mobile:h-full desktop:h-[510px] mobile:px-2 tablet:px-10 desktop:px-10 py-[100px] relative flex mobile:flex-col desktop:flex-row justify-between"}>
                 <div className={"flex flex-col"}>
                     <div className={"flex flex-col gap-[30px]"}>
                         <Logo/>
-                        <span className={"opacity-30 text-white text-sm font-normal w-[380px]"}>
+                        <span className={"opacity-30 text-white text-sm font-normal mobile:w-full desktop:w-[380px]"}>
                     «Инкомос», доступные решения для роста в сфере электронной коммерции
                 </span>
-                        <span className={"opacity-30 text-white text-sm font-normal w-[380px]"}>
+                        <span className={"opacity-30 text-white text-sm font-normal mobile:w-full desktop:w-[380px]"}>
                     Подпишитесь на новостную рассылку, чтобы не пропустить важное.
                 </span>
                         <EmailInput/>
                         <span className={"opacity-30 text-white text-xs font-normal"}>© 2023 «Инкомос», готовый бизнес на маркетплейсах</span>
                     </div>
                 </div>
-                <div className={"flex flex-col gap-[24px]"}>
+                <div className={"mobile:hidden desktop:flex flex-col gap-[24px]"}>
                     <Link href={"#main"} className={"opacity-30 text-white text-sm font-semibold"}>Проект</Link>
                     {
                         config.navLinks.map(link => {
