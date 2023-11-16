@@ -24,7 +24,7 @@ const WelcomeSection = () => {
             {
                 showModal && (
                     <div className={"absolute top-0 left-0 w-full h-full bg-[#0022D3] z-[2000]"}>
-                       <IoClose className={"absolute top-2 right-2 text-4xl"}/>
+                       <IoClose onClick={handleModal} className={"absolute top-2 right-2 text-4xl"}/>
                         <div className={"p-20 flex flex-col gap-10 text-3xl font-bold"}>
                             {
                                 config.navLinks.map(link => {
