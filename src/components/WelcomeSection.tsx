@@ -72,9 +72,9 @@ const WelcomeSection = () => {
                 Мы работаем со следующими площадками
             </span>
             <div className={"justify-between mobile:px-2 tablet:px-10 desktop:px-10 mobile:flex desktop:hidden container m-auto items-center justify-center"}>
-                <img className={"w-[57px] h-[57px] bg-cover bg-center"} src={"/icon_square.svg"} alt={"ozon mark"}/>
-                <img className={"w-[57px] h-[57px] bg-cover bg-center"} src={"/wildberries.png"} alt={"ozon mark"}/>
-                <img className={"w-[57px] h-[57px] bg-cover bg-center"} src={"/ym.png"} alt={"ozon mark"}/>
+                <img className={" bg-cover bg-center"} src={"/icon_square.svg"} alt={"ozon mark"}/>
+                <img className={" bg-cover bg-center"} src={"/wildberries.png"} alt={"ozon mark"}/>
+                <img className={" bg-cover bg-center"} src={"/ym.png"} alt={"ozon mark"}/>
             </div>
         </div>
     );
