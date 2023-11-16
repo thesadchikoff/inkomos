@@ -14,7 +14,7 @@ const OurTeam = () => {
                 </h1>
                 <span className={"text-center text-slate-400 text-base font-normal"}>Вдохновляющие учителя, готовые помочь Вам пройти путь успешного обучения!</span>
             </div>
-            <div className={"w-full flex items-center px-10 gap-[100px] mt-[79px]"}>
+            <div className={"container m-auto w-full flex items-center px-10 gap-[100px] mt-[79px]"}>
                 {
                     config.team.map(member => {
                         return (
@@ -41,8 +41,10 @@ const OurTeam = () => {
                     })
                 }
             </div>
-            <div className={"w-full flex items-center pr-10 justify-between"}>
-                <img src={"/shield.png"} alt={"shield"}/>
+           <div className={"w-full h-full relative"}>
+               <img className={"absolute -top-44"} src={"/shield.png"} alt={"shield"}/>
+           </div>
+            <div className={"container my-20 mb-52 w-full h-screen m-auto flex items-center justify-end"}>
                 <div className={"flex flex-col gap-[32px]"}>
                     <div className={"flex flex-col gap-[16px]"}>
                         <h1 className={"text-white text-[50px] font-black"}>Круглосуточный <br/> доступ к
@@ -95,7 +97,7 @@ const OurTeam = () => {
                 <img className={"absolute right-0 -z-10 top-[500px]"} src={"/briefcase-img.png"} alt={"spiral-bg"}/>
             </div>
             <div className={"w-full px-10 pt-20"}>
-                <div className={"w-1/2 flex flex-col gap-[32px]"}>
+                <div className={"container m-auto flex flex-col gap-[32px]"}>
                     <h1 className={"text-white text-[50px] font-black w-[580px]"}>Поднять продажи проще, чем Вам
                         кажется</h1>
                     <span className={"text-slate-400 text-base font-normal"}>

@@ -9,7 +9,7 @@ interface ITable {
 
 const Table = ({children}: ITable) => {
     return (
-        <div className={"bg-[#1A1B23] w-full px-[32px] py-[4px] rounded-[25px] flex flex-col"}>
+        <div className={"container m-auto bg-[#1A1B23] w-full px-[32px] py-[4px] rounded-[25px] flex flex-col"}>
             {children}
         </div>
     );
