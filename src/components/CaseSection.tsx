@@ -5,7 +5,7 @@ import config from "@/config/siteConfig";
 
 const CaseSection = () => {
     return (
-        <main id={"case-section"} className={"container m-auto flex mobile:flex-col desktop:flex-row mobile:px-2 tablet:px-10 desktop:px-10 z-50 pb-20"}>
+        <main id={"case-section"} className={"container m-auto pt-28 mobile:px-2 tablet:px-10 desktop:px-10 z-50 pb-20"}>
             <div className={"bg-[#1A1B23] mobile:p-[20px] desktop:p-[60px] rounded-[25px] flex mobile:flex-col desktop:flex-row gap-[55px] justify-start z-50"}>
                     <div className={"z-50"}>
                         <Image src={'case.svg'} alt={'Кейс "Лидер"'} width={80} height={80}/>
