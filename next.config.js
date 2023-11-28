@@ -3,6 +3,11 @@ const nextConfig = {
     images: {
         disableStaticImages: true
     },
+    env: {
+        SMTP_USER: process.env.SMTP_USER,
+        SMTP_PASSWORD: process.env.SMTP_PASSWORD,
+        SMTP_FROM_EMAIL: process.env.SMTP_FROM_EMAIL
+    },
     async headers() {
         return [
             {
