@@ -44,11 +44,7 @@ const Footer = () => {
                             конфиденциальности</Link>
                         <Link href={"#"} className={"opacity-30 text-white text-sm font-normal"}>«Инкомос» условия
                             предоставления услуг</Link>
-                        <div className={"flex items-center gap-2 text-xl text-gray-400"}>
-                            <FaVk className={"cursor-pointer hover:text-white"}/>
-                            <FaSquareWhatsapp className={"cursor-pointer hover:text-white"}/>
-                            <FaTelegram className={"cursor-pointer hover:text-white"}/>
-                        </div>
+
                     </div>
                     <div className={"text-xs font-normal flex items-center gap-1"}><span
                         className={"text-white opacity-30"}>Над сайтом трудился</span> <Link

@@ -2,6 +2,7 @@ import React from 'react';
 import Image from "next/image";
 import {FaArrowRightLong} from 'react-icons/fa6'
 import config from "@/config/siteConfig";
+import Link from "next/link";
 
 const CaseSection = () => {
     return (
@@ -26,10 +27,10 @@ const CaseSection = () => {
                                 <span className={"text-slate-400 text-sm font-normal"}>
                                 {config.product.saleDescription}
                             </span>
-                                <button className={"flex items-center gap-[6px] text-purple-400 text-base font-semibold "}>
+                                <Link href={"/feedback"} className={"flex items-center gap-[6px] text-purple-400 text-base font-semibold "}>
                                     Приобрести
                                     <FaArrowRightLong/>
-                                </button>
+                                </Link>
                             </div>
                         </div>
                     </div>

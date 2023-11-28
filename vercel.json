@@ -1,0 +1,21 @@
+{
+  "rewrites": [
+    { "source": "/", "destination": "/" },
+    { "source": "/feedback", "destination": "/" },
+    {
+      "source": "/proxy/:match*",
+      "destination": "https://example.com/:match*"
+    },
+    {
+      "source": "/:path((?!uk/).*)",
+      "has": [
+        {
+          "type": "header",
+          "key": "x-vercel-ip-country",
+          "value": "GB"
+        }
+      ],
+      "destination": "/uk/:path*"
+    }
+  ]
+}

@@ -1,15 +1,15 @@
 "use client"
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import Header from "@/components/Header";
 import { IoClose } from "react-icons/io5";
 import Image from "next/image";
 import config from "@/config/siteConfig";
 import Link from "next/link";
+import axios from "axios";
 
 const WelcomeSection = () => {
     const [showModal, setShowModal] = useState(false)
     const handleModal = () => {
-        console.log("click")
         if (showModal) {
             setShowModal(false)
             return document.body.style.overflow = "auto"
@@ -47,25 +47,22 @@ const WelcomeSection = () => {
                 <Image className={"absolute right-[150px] z-[2] -top-10 mobile:hidden desktop:block"} src={"/yandex.png"} width={290} height={290} alt={"ozon mark"}/>
                 <Image className={"absolute -z-10 left-10  desktop:bottom-[200px]"} src={"/sphere.svg"} width={110} height={110} alt={"ozon mark"}/>
                 {/*intro*/}
-                <div className={"w-full flex mobile:px-2 tablet:px-10 desktop:px-10 flex-col gap-[20px] items-center"}>
+                <div className={"w-full flex mobile:px-2 mobile:mb-[150px] desktop:mb-0 tablet:mb-[50px] tablet:px-10 desktop:px-10 flex-col gap-[20px] items-center"}>
                         <span className="mobile:w-full desktop:w-[1098px] z-[3] text-center text-white desktop:text-[85px] mobile:text-[30px] font-black relative"><br/>Выстроим
                         <img className={"absolute mobile:left-[80px] mobile:bottom-[125px] desktop:left-[130px] desktop:bottom-[40px] mobile:w-[76px] mobile:hidden mobile:h-[76px] desktop:w-[156px] desktop:h-[156px]"} src={"/glass.png"} alt={"glass"} unselectable={"on"}/>
                          <br/>
                         электронную коммерцию за Вас</span>
                     <div className="mobile:px-2 tablet:px-10 desktop:px-10 container m-auto h-[103px] flex-col justify-start items-center gap-4 inline-flex">
                         <div
-                            className="mobile:w-full desktop:w-[793px] h-[103px] text-center text-slate-400 text-base font-normal leading-normal">Будущее,
-                            которое стоит за Вами!
-                            <br/>Мы готовы поделиться с Вами нашим опытом!
-                            <br/>Сделаем из Вас успешных предпринимателей!
+                            className="mobile:w-full h-max desktop:w-[793px] h-[103px] text-center text-slate-400 text-base font-normal leading-normal">Данное направление подойдет  не только начинающим,<br/> но и действующим предпринимателем,<br/> у которых уже есть свой сайт или интернет магазин,<br/> так как маркетплейс-это не просто площадка для дополнительного или основного дохода,<br/> но и бесплатная реклама для вашего бизнеса.
                         </div>
                     </div>
                 </div>
                 {/*intro-end*/}
-                <div
+                <Link href={"/feedback"}
                     className="w-[156px] h-14 pl-[17px] pr-4 bg-gradient-to-bl from-cyan-400 to-purple-600 rounded-[10px] cursor-pointer justify-center items-center inline-flex">
                     <div className="text-center text-white text-base font-semibold leading-none">Начать вместе</div>
-                </div>
+                </Link>
             </div>
 
             <span className={"desktop:hidden mobile:block text-center mobile:px-2 tablet:px-10 desktop:px-10 container m-auto pt-5 font-bold text-2xl"}>
