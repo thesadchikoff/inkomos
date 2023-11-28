@@ -42,7 +42,7 @@ const Feedback = () => {
                     Вас остались вопросы или предложения? Тогда Вы можете отправить обращение нам и мы свяжемся с вами в
                     ближайшее время.</p>
                 <div className={"mobile:w-full desktop:w-1/2 flex flex-col gap-5"}>
-                    <input value={email} onChange={e => setEmail(e.target.value)} className={`${error ? "border-red-600" : "border-zinc-600"} px-5 w-full py-4 border rounded bg-transparent`}
+                    <input value={email} type="email" onChange={e => setEmail(e.target.value)} className={`${error ? "border-red-600" : "border-zinc-600"} px-5 w-full py-4 border rounded bg-transparent`}
                            placeholder={"Укажите Вашу почту"}/>
                     <textarea value={message} onChange={e => setMessage(e.target.value)} className={`resize-none px-5 w-full h-1/2 py-4 border rounded bg-transparent ${error ? "border-red-600" : "border-zinc-600"}`}
                               placeholder={"Введите Ваше обращение"}/>
