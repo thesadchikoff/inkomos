@@ -8,5 +8,23 @@ export default function sitemap(): MetadataRoute.Sitemap {
             changeFrequency: 'always',
             priority: 1,
         },
+        {
+            url: 'https://incomos.vercel.app/feedback',
+            lastModified: new Date(),
+            changeFrequency: 'always',
+            priority: 1,
+        },
+        {
+            url: 'https://incomos.vercel.app/policy/user-agreement',
+            lastModified: new Date(),
+            changeFrequency: 'always',
+            priority: 1,
+        },
+        {
+            url: 'https://incomos.vercel.app/policy/confidentiality',
+            lastModified: new Date(),
+            changeFrequency: 'always',
+            priority: 1,
+        },
     ]
 }

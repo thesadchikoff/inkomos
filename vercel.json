@@ -2,6 +2,8 @@
   "rewrites": [
     { "source": "/", "destination": "/" },
     { "source": "/feedback", "destination": "/" },
+    { "source": "/policy/user-agreement", "destination": "/" },
+    { "source": "/policy/confidentiality", "destination": "/" },
     {
       "source": "/proxy/:match*",
       "destination": "https://example.com/:match*"

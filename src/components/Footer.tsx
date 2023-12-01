@@ -36,18 +36,19 @@ const Footer = () => {
                         })
                     }
                 </div>
-                <div className={"w-[280px] h-full flex flex-col gap-[24px] justify-between"}>
+                <div className={"w-[280px] h-full flex flex-col gap-[10px] justify-between"}>
                     <div className={"flex flex-col gap-[24px]"}>
                         <h1 className={"opacity-30 text-white text-sm font-semibold"}>Политика конфиденциальности и
                             условия предоставления услуг</h1>
-                        <Link href={"#"} className={"opacity-30 text-white text-sm font-normal"}>«Инкомос» политика
+                        <Link href={"/policy/confidentiality"} className={"opacity-30 text-white text-sm font-normal"}>«Инкомос» политика
                             конфиденциальности</Link>
-                        <Link href={"#"} className={"opacity-30 text-white text-sm font-normal"}>«Инкомос» условия
-                            предоставления услуг</Link>
+                        <Link href={"/policy/user-agreement"} className={"opacity-30 text-white text-sm font-normal"}>«Инкомос» пользовательское соглашение</Link>
 
                     </div>
+                    <Link href={"tel:+79809481800"} className={"text-xs font-semibold opacity-30"}>+7 (980) 948-18-00</Link>
                     <div className={"text-xs font-normal flex items-center gap-1"}><span
-                        className={"text-white opacity-30"}>Над сайтом трудился</span> <Link
+                        className={"text-white opacity-30"}>Над сайтом трудился</span>
+                        <Link
                         className={"text-blue-600 font-semibold"} href={"https://sadchikoff.vercel.app/"}
                         target={"_blank"}>@n_sadchikoff</Link></div>
                 </div>

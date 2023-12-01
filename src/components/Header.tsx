@@ -6,7 +6,7 @@ import Logo from "@/components/UI/Logo/Logo";
 import { AiOutlineMenu } from "react-icons/ai";
 
 interface IHeader {
-    handle: () => any
+    handle?: () => any
 }
 const Header = ({handle}: IHeader) => {
     return (
