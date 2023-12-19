@@ -16,9 +16,9 @@ const Page = () => {
                 <p>Настоящая Политика конфиденциальности персональных данных (далее – Политика конфиденциальности)
                     действует в отношении всей информации, которую сайт Инкомос — бизнес на маркетплейсах, (далее –
                     Инкомос) расположенный на доменном имени <Link
-                        href="https://incomos.vercel.app/" className={"text-blue-700"}>https://incomos.vercel.app/</Link> (а также его субдоменах),
+                        href="https://promo-inkomos.ru/" className={"text-blue-700"}>https://promo-inkomos.ru</Link> (а также его субдоменах),
                     может получить о Пользователе во время использования сайта <Link
-                        href="https://incomos.vercel.app/" className={"text-blue-700"}>https://incomos.vercel.app/</Link> (а также его субдоменов),
+                        href="https://promo-inkomos.ru/" className={"text-blue-700"}>https://promo-inkomos.ru</Link> (а также его субдоменов),
                     его программ и его продуктов.</p>
                 <div className={"flex flex-col gap-5"}>
                     <h2 className={"text-center text-xl font-bold"}>1. Определение терминов</h2>
