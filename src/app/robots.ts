@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
             allow: ['/'],
             disallow: ['/feedback/', '/policy/user-agreement', '/policy/confidentiality'],
         },
-        sitemap: 'https://incomos.vercel.app/sitemap.xml',
+        sitemap: 'https://promo-inkomos.ru/sitemap.xml',
     }
 }
